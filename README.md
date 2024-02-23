@@ -1,8 +1,39 @@
 # Genetic Algorithm
-Every country, particularly well-developed ones, offers a vast marketplace for investing your capital. The spectrum of available assets is extensive, and your decision-making process, balancing risk and return, guides your asset selection. Throughout history, it's been a widely held belief that diversification is key – akin to not placing all of one's assets (or eggs) in a single basket. Assets vary significantly in terms of risk and return. For instance, investments in bank deposits and treasury bills offer low risk but also low returns. Conversely, the stock market presents potentially higher returns but comes with increased risk. While individuals often seek high returns, they also strive to mitigate risk. This is where portfolio construction comes into play.
-
-A portfolio consists of a collection of financial instruments such as stocks, bonds, commodities, cash, and other assets like closed-end funds and exchange-traded funds (ETFs). The key is to strike a balance between risk and return within the portfolio. But how do we maximize returns based on our risk preferences? This is where portfolio optimization techniques come into play.
-
-Portfolio optimization is both an art and a science, enhancing trading systems by fine-tuning the risk-return balance. Through this process, we can construct an optimal portfolio, either by reducing risk or increasing expected returns. It's important to note that the primary objective for investors is to achieve portfolio stability rather than solely focusing on attaining the highest returns.
-
-In my recent project, I leveraged Genetic Algorithms and the R programming language within R Studio to identify the optimal portfolio. The complete code for this project is available on GitHub.
+library(tidyverse)
+## -- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+## v dplyr 1.1.0 v readr 2.1.4
+## v forcats 1.0.0 v stringr 1.5.0
+## v ggplot2 3.4.1 v tibble 3.1.8
+## v lubridate 1.9.2 v tidyr 1.3.0
+## v purrr 1.0.1
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag() masks stats::lag()
+## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+library(xts) # working with extensible time series
+## Loading required package: zoo
+##
+## Attaching package: ’zoo’
+##
+## The following objects are masked from ’package:base’:
+##
+## as.Date, as.Date.numeric
+library(tidyverse)
+## -- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+## v dplyr 1.1.0 v readr 2.1.4
+## v forcats 1.0.0 v stringr 1.5.0
+## v ggplot2 3.4.1 v tibble 3.1.8
+## v lubridate 1.9.2 v tidyr 1.3.0
+## v purrr 1.0.1
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag() masks stats::lag()
+## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+library(xts) # working with extensible time series
+## Loading required package: zoo
+##
+## Attaching package: ’zoo’
+##
+## The following objects are masked from ’package:base’:
+##
+## as.Date, as.Date.numeric
